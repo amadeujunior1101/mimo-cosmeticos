@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Courgette");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+
+body{
+background-color: #eee8e8;
+}
+
+.bg-shopping_cart{
+  color: #FFF;
+  background-color: rgb(238, 31, 159);
+  padding-top: 20px;
+}
+
+.bg-shopping_basket{
+  color: #FFF;
+  background-color: rgb(8, 131, 110);
+  padding-top: 20px;
+}
+
+.bg-local_shipping{
+  color: #FFF;
+  background-color: rgb(141, 13, 135);
+  padding-top: 20px;
+}
+
+.bg-cancel{
+  color: #FFF;
+  background-color: rgb(243, 80, 16);
+  padding-top: 20px;
+}
+
+.icon-align{
+  font-size: 50px;
+}
+
+/* teste */
+.bg-card{
+  background-color: #FFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.font-card{
+  color: #212121;
+  font-size: 17px;
+  text-align: center;
+}
+
+.font-card-values{
+  margin-top: 10px;
+  color: #19B3D3;
+  font-size: 20px;
+  text-align: center;
+}
+/* teste */
+
+.bg-mattBlackLight {
+  background-color: #22242A;
+}
+
+.bg-sidebar-left{
+  background-color: #2f323a;
+}
+
+.text-mattBlackLight {
+  color: #303337;
+}
+
+.bg-mattBlackDark, .nav-link:hover, .nav-link.active {
+  background-color: #19B3D3;
+}
+
+.text-mattBlackDark {
+  color: #212121;
+}
+
+.bg-mattGray {
+  background-color: #878d8d;
+}
+
+.text-mattGray, body, .nav-link .icon, .nav-link .text {
+  color: #faffff;
+}
+
+.bg-mattRed {
+  background-color: #ec6271;
+}
+
+.text-mattRed, .nav-link:hover .icon,
+.nav-link:hover .text, .nav-link.active .icon,
+.nav-link.active .text {
+  color:  #FFF;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* body {
+  height: 1000px;
+} */
+
+.wrapper {
+  margin-top: 3.5rem;
+}
+
+.wrapper .sideMenu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 3.5rem auto auto;
+  left: 0;
+  width: 12.5rem;
+  -webkit-transition: all ease 0.25s;
+  transition: all ease 0.25s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  z-index: 2000;
+}
+
+.wrapper .content {
+  width: 1000%;
+  margin-left: 0rem;
+  -webkit-transition: all ease 0.25s;
+  transition: all ease 0.25s;
+}
+
+.wrapper.active .sideMenu {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav-link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+  white-space: nowrap;
+}
+
+.nav-link .icon {
+  margin-right: 0.25rem;
+  font-size: 1.875rem;
+  vertical-align: middle;
+  height: 2rem;
+  width: 2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-link .text {
+  /* font-size: 0.875rem; */
+  font-size: 20px;
+}
+.nav-link i {
+  /* font-size: 0.875rem; */
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #FFF;
+}
+.sideMenuToggler a{
+  padding-top: 10px;
+}
+
+.navbar_name_company{
+  color: #FFF;
+  font-size: 22px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar_name_company span{
+  color: #19B3D3;
+  font-size: 22px;
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .wrapper .sideMenu {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .wrapper .content {
+    margin-left: 12.5rem;
+  }
+  .wrapper.active .sideMenu {
+    width: 5rem;
+  }
+  .wrapper.active .sideMenu .nav-link {
+    text-align: center;
+  }
+  .wrapper.active .sideMenu .nav-link .icon {
+    margin-right: 0;
+  }
+  .wrapper.active .sideMenu .nav-link .text {
+    display: none;
+  }
+  .wrapper.active .content {
+    margin-left: 5rem;
+  }
+  
+}
+.slimScrollDiv{
+  margin-top: 3px;
+  /* background-color: red; */
+}
+
+/*# sourceMappingURL=style.css.map */
+
