@@ -1,0 +1,242 @@
+#page-wrap {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    /* display: flex; */
+    background: var(--color-primary);
+}
+
+.page-container {
+    flex-direction: row;
+    display: flex;
+    height: 100vh;
+}
+
+.content {
+    flex: 8;
+    background: var(--color-content);
+    text-align: center;
+    /* font: 500 1.3rem Poppins; */
+    overflow: auto;
+    margin-bottom: 50px;
+}
+
+.column-new-client {
+    justify-content: space-between;
+    display: flex;
+}
+
+.top-new-client {
+    margin: 10px auto;
+}
+
+#form-new-client {
+    margin: 20px auto;
+    /* background: green; */
+}
+
+.input-group-base {
+    display: flex;
+    justify-content: center;
+    font: 100 1rem Poppins;
+}
+
+.input-group-base input{
+    font: 100 1rem Poppins;
+}
+
+.search-input-group-base {
+    display: flex;
+    justify-content: center;
+}
+
+.search-input-group {
+    display: inline;
+    text-align: left;
+    width: 90%;
+    margin: 5px 10px;
+}
+
+.search-client-name {
+    font: 200 1rem Poppins;
+}
+
+.input-group1 {
+    /* flex-direction: row; */
+    display: inline;
+    text-align: left;
+    width: 40%;
+    margin: 5px 10px;
+}
+
+.input-new-client {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    /* border-radius: 10px; */
+    font: 300 1.2rem Poppins;
+    border-color: transparent;
+
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.position-form-client {
+    margin: 40px 0px 40px 0px;
+}
+
+.position-bnt-save {
+    margin: 20px auto;
+    text-align: left;
+}
+
+.button-new-category {
+    margin: auto 20px;
+}
+
+/* table  */
+
+.base-table {
+    overflow: auto;
+    margin-bottom: 100px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 18px auto 0;
+    font-size: 1rem;
+    /* border-radius: 18px; */
+}
+
+table thead {
+    background-color: #d9f0fc;
+}
+
+table th {
+    border: 1px solid #6fcfff;
+    padding: 5px 18px;
+}
+
+table td {
+    border: 1px solid #6fcfff;
+    padding: 15px 12px;
+}
+
+table thead tr {
+    border: 2px solid #6fcfff;
+    background: var(--color-text-white);
+}
+
+.Ttr {
+    text-align: left;
+}
+
+.Ttr:hover {
+    /* color: var(--color-primary); */
+    background: var(--color-hover-table);
+    transition: opacity 1s ease-in-out;
+    cursor: pointer;
+}
+
+/* mobile */
+
+@media (max-width: 639px) {
+    .title {
+        text-align: left;
+    }
+
+    .smart-table thead {
+        display: none;
+    }
+
+    .smart-table tr,
+    .smart-table td {
+        display: block;
+    }
+
+    .smart-table tr:not(:last-child) {
+        border-bottom: 5px solid #5ca8c3;
+    }
+
+    .smart-table td {
+        padding-left: 54%;
+        position: relative;
+    }
+
+    .smart-table td::before {
+        position: absolute;
+        padding: 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 45%;
+        content: attr(data-col-title);
+        font-weight: bold;
+        background-color: #f3f6fa;
+    }
+}
+
+@media (max-width: 768px) {
+    .input-group-base {
+        display: block;
+    }
+    .search-input-group {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Desktop  */
+@media (min-width: 1024px) {
+    .title {
+        text-align: center;
+    }
+
+    table {
+        width: 90%;
+    }
+    .Tnowrap {
+        white-space: nowrap;
+    }
+}
+
+/* .smart-table td {
+
+    padding: 5px;
+
+} */
+
+.name-new-client-warning {
+    display: block;
+    color: var(--color-alert-label);
+}
+
+.name-new-client{
+    margin-right: 10px;
+}
+
+.button-new-client {
+    background: var(--color-background-buttom); /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    /* border-radius: 12px; */
+    /* margin: 0px 10px 0px 10px; */
+    margin: 5px;
+    padding: 10px 40px 10px 40px;
+    width: 200px;
+}
+
+.button-new-client:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}

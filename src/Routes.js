@@ -1,14 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Dashboard from './pages/Dashboard/Dashboard'
-import Category from './pages/Register/Category';
-import Client from './pages/Register/Client';
-import Product from './pages/Register/Product';
-import Seller from './pages/Register/Seller';
-import UpdateCategory from './pages/Register/UpdateCategory'
+import Home from './pages/Home/Home'
+import NewClient from './pages/Client/NewClient';
+import NewProduct from './pages/Product/NewProduct';
+import Seller from './pages/Seller/Seller';
+import NewUpdateCategory from './pages/Category/NewUpdateCategory'
 import Page404 from './pages/NotFound/Page404'
-import NewDashBoard from './pages/NewDashBoard/NewDashBoard'
+import NewCategory from './pages/Category/NewCategory';
 
 //Criar o componentes com as rotas
 // const history = createMemoryHistory(location)
@@ -16,12 +15,12 @@ function Routes() {
     return (
         <BrowserRouter >
             <Switch>
-                <Route path="/" exact component={NewDashBoard} />
-                <Route path="/dashboard" component={Dashboard} />
-                <Route path="/categorias" component={Category} />
-                <Route path="/categoria/update_category/:id" component={UpdateCategory} />
-                <Route path="/clientes" component={Client} />
-                <Route path="/produtos" component={Product} />
+                <Route path="/" exact component={Home} />
+                <Route path="/home" component={Home} />
+                <Route path="/categorias" component={NewCategory} />
+                <Route path="/categoria/update_category/:id" component={NewUpdateCategory} />
+                <Route path="/clientes" component={NewClient} />
+                <Route path="/produtos" component={NewProduct} />
                 <Route path="/vendedores" component={Seller} />
                 <Route path="*" component={Page404} />
             </Switch>

@@ -1,4 +1,106 @@
-#sidebar-register {
-    cursor: pointer;
-    text-decoration: none;
+.navbar-nav {
+    list-style: none;
 }
+
+.container-sidebar {
+    border-right: 3px solid;
+    border-color: var(--color-background-navbar);
+}
+
+#fixo {
+    width: 100px;
+    overflow: hidden;
+}
+#rolavel {
+    height: 570px;
+    width: 117px;
+    overflow-y: scroll;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+/*
+ul a{
+    margin-right: 20px;
+} */
+
+.recall {
+    cursor: pointer;
+}
+
+ul li {
+    background: var(--color-box-base);
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li a {
+    color: #000;
+    display: grid;
+    font: 12.8px Nunito;
+}
+
+#register {
+    display: grid;
+    /* color: rgb(177, 171, 171); */
+    /* font-family: 'Roboto', Helvetica, sans-serif; */
+    font: 12.8px Nunito;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* font-size: 25px; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#sidebar-register {
+    display: grid;
+}
+
+a:link {
+    text-decoration: none;
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+
+    padding-left: 10px;
+    padding-right: 10px; */
+}
+
+ul li:hover {
+    background: var(--color-hover-sidebar);
+    transition: opacity 1s ease-in-out;
+    /* border-left: solid 0.2rem;
+    border-left-color: #000 */
+}
+
+.icon-sidebar:hover,
+ul li a:hover {
+    color: var(--color-hover-icons);
+}
+
+.icon-sidebar {
+    /* padding-right: 10px; */
+    color: var(--color-text-grey);
+    font-size: 25px;
+    margin-top: 15px;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-sidebar span {
+    font: 700 14px Nunito;
+    margin: 5px;
+    align-items: center;
+}
+
+/* .icon-sidebar:hover {
+    color: red;
+} */

@@ -1,31 +1,110 @@
 #sidebar-extra-register {
-    left: 200px;
+    /* left: 200px; */
+    top: 80px;
     /* z-index: 9000; */
-    background-color: #6b6f7c;
+    background-color: var(--color-background-sidebar);
     width: '100%';
     height: 100%;
     position: absolute;
     -webkit-transition: all ease 0.25s;
     transition: all ease 0.25s;
     /* -webkit-transform: translateX(-100%); */
-            /* transform: translateX(-100%); */
+    /* transform: translateX(-100%); */
     z-index: 2080;
     display: none;
+    /* border-left: solid 0.2rem;
+    border-left-color: var(--color-primary); */
+    text-align: left;
 }
 
 #sidebar-extra-report {
-    left: 200px;
+    /* left: 200px; */
+    top: 80px;
     /* z-index: 9000; */
-    background-color: #6b6f7c;
+    background-color: var(--color-background-sidebar);
     width: '100%';
     height: 100%;
     position: absolute;
     -webkit-transition: all ease 0.25s;
     transition: all ease 0.25s;
     /* -webkit-transform: translateX(-100%); */
-            /* transform: translateX(-100%); */
+    /* transform: translateX(-100%); */
     z-index: 2080;
     display: none;
+    /* border-left: solid 0.2rem;
+    border-left-color: var(--color-primary); */
+    text-align: left;
+}
+
+.title-sidebar-extra {
+    color: #000;
+    font: 700 1.2rem Poppins;
+    margin-left: 1rem;
+}
+
+/* #sidebar-extra-report a {
+    margin-left: 0.5rem;
+    margin-right: 3rem;
+} */
+
+.menu-extra-position {
+    margin-top: 1rem;
+}
+
+/* #sidebar-extra-register a {
+    margin-left: 0.5rem;
+    margin-right: 3rem;
+} */
+
+#sidebar-extra-register ul {
+    width: 100%;
+    margin-top: 0;
+}
+
+#sidebar-extra-register ul li a {
+    display: inline;
+    /* margin: 0; */
+}
+
+#sidebar-extra-register ul li a:link {
+    padding-right: 50px;
+}
+
+#sidebar-extra-register ul li {
+    height: 70px;
+    text-align: left;
+    justify-content: left;
+}
+
+#sidebar-extra-register .icon-sidebar {
+    font-size: 12.8px;
+    padding-left: 10px;
 }
 
 
+
+
+#sidebar-extra-report ul {
+    width: 100%;
+    margin-top: 0;
+}
+
+#sidebar-extra-report ul li a {
+    display: inline;
+    /* margin: 0; */
+}
+
+#sidebar-extra-report ul li a:link {
+    padding-right: 50px;
+}
+
+#sidebar-extra-report ul li {
+    height: 70px;
+    text-align: left;
+    justify-content: left;
+}
+
+#sidebar-extra-report .icon-sidebar {
+    font-size: 12.8px;
+    padding-left: 10px;
+}
